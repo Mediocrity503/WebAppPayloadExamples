@@ -1,0 +1,77 @@
+Whoami
+$(whoami)
+`whoami`
+text | whoami
+text ; whoami
+text & whoami
+text | whoami #
+text & whoami #
+text ; whoami #
+text | whoami |
+text & whoami &
+text ; whoami ;
+text | echo `whoami`
+text & echo `whoami`
+text ; echo `whoami`
+text || whoami
+text && whoami
+text || whoami #
+text && whoami #
+text || whoami ||
+text && whoami &&
+text || echo `whoami`
+text && echo `whoami`
+text ; whoami ||
+text && whoami ;
+text && whoami ||
+text || whoami ;
+text | whoami ;
+text | whoami ||
+text & whoami &&
+text & whoami ||
+text && whoami &
+text && whoami ||
+text || whoami &
+text || whoami &&
+text | whoami &
+text | whoami &&
+text' ; whoami #
+text' && whoami #
+text' || whoami #
+text' | whoami #
+text' & whoami & 'text
+text' & whoami || 'text
+text' & whoami && 'text
+text' && whoami & 'text
+text' && whoami || 'text
+text' && whoami && 'text
+text' || whoami & 'text
+text' || whoami || 'text
+text' || whoami && 'text
+text' | whoami & 'text
+text' | whoami || 'text
+text' | whoami && 'text
+text' ; whoami ; echo 'text
+text' && whoami ; echo 'text
+text' || whoami ; echo 'text
+text' | whoami ; echo 'text
+text" & whoami & "text
+text" & whoami || "text
+text" & whoami && "text
+text" && whoami & "text
+text" && whoami || "text
+text" && whoami && "text
+text" || whoami & "text
+text" || whoami || "text
+text" || whoami && "text
+text" | whoami & "text
+text" | whoami || "text
+text" | whoami && "text
+text" ; whoami #
+text" && whoami #
+text" || whoami #
+text" | whoami #
+text" ; whoami ; echo "text
+text" && whoami ; echo "text
+text" || whoami ; echo "text
+text" | whoami ; echo "text
