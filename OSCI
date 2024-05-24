@@ -75,3 +75,13 @@ text" ; whoami ; echo "text
 text" && whoami ; echo "text
 text" || whoami ; echo "text
 text" | whoami ; echo "text
+
+test1 ; sleep 10
+test1 & sleep 10
+test1 | sleep 10
+test1 && sleep 10
+test1|| sleep 10
+test1 ; ping -c 10 127.0.0.1
+test1 & ping -c 10 127.0.0.1
+test1 | ping -c 10 127.0.0.1
+test1 && ping -n 10 127.0.0.1
