@@ -1,6 +1,7 @@
 # WebAppPayloadExamples
 Brief example of various common web application vulnerability payloads. 
 <h1>Injections</h1>
+'||(SELECT%2bcase+when+substring(version(),1,1)%3d'5'+then+sleep(10)+else+sleep(0)+end+from+dual)||'
   <ul>
 ') OR 1=1 -- 
 
